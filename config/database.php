@@ -89,8 +89,11 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
+<<<<<<< HEAD
             // 'encrypt' => env('DB_ENCRYPT', 'yes'),
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
+=======
+>>>>>>> 5afc08f5cb6782e2c20ba6ce8a1e9cba9dbd2f7e
         ],
 
     ],

@@ -1,5 +1,8 @@
 /node_modules
+<<<<<<< HEAD
 /public/build
+=======
+>>>>>>> 5afc08f5cb6782e2c20ba6ce8a1e9cba9dbd2f7e
 /public/hot
 /public/storage
 /storage/*.key

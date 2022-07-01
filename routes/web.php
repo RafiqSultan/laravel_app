@@ -1,5 +1,13 @@
 <?php
 
+<<<<<<< HEAD
+=======
+use App\Http\Controllers\admin\AuthController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\CategoriesController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UsersController;
+>>>>>>> 5afc08f5cb6782e2c20ba6ce8a1e9cba9dbd2f7e
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +22,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+<<<<<<< HEAD
     return view('welcome');
 });
 
+=======
+return view('admin.layout.master');
+});
+
+
+Route::get('/login',[AuthController::class,'showLogin']);
+Route::post('/do_login',[AuthController::class,'login'])->name('do_login');
+
+Route::get('/create_user',[AuthController::class,'createUser'])->name('create_user');
+Route::post('/save_user',[AuthController::class,'register'])->name('save_user');
+
+Route::get('/home',[DashboardController::class,'dashboard'])->name('home');
+
+Route::get('/show_all_users',[AuthController::class,'listAll'])->name("show_users");
+Route::get('/new_category',[CategoriesController::class,'create'])->name('new_category');
+>>>>>>> 5afc08f5cb6782e2c20ba6ce8a1e9cba9dbd2f7e
